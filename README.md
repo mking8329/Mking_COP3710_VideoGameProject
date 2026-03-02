@@ -9,4 +9,4 @@
 - IGN.
 
 # Database Program [B]
-- Will use MariaSQL
+- Will use Oracle SQL
