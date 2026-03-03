@@ -1,0 +1,19 @@
+INSERT INTO Franchise (FranchiseID, FranchiseName, Publisher, StartYear, WebsiteURL)
+VALUES (1, 'Super Mario', 'Nintendo', 1985, 'https://mario.nintendo.com');
+
+INSERT INTO Platform (PlatformID, PlatformName, Manufacturer, ReleaseYear)
+VALUES (1, 'Nintendo Switch', 'Nintendo', 2017);
+
+INSERT INTO Game (GameID, Title, ReleaseDate, Genre, ESRBRating, FranchiseID)
+VALUES (1, 'Super Mario Odyssey', DATE '2017-10-27', 'Platformer', 'E10+', 1);
+
+INSERT INTO GamePlatform (GameID, PlatformID, ReleaseDateOnPlatform, PlatformExclusive)
+VALUES (1, 1, DATE '2017-10-27', 1);
+
+INSERT INTO QuarterlySales (GameID, RegionID, Year, Quarter, UnitsSold, Revenue)
+VALUES (1, 1, 2017, 4, 2500000, 149999999.99);
+
+INSERT INTO FranchisePerformanceRank (FranchiseID, GlobalRank, TotalRevenue, LastUpdatedDate)
+VALUES (1, 1, 1000000000.00, SYSDATE);
+
+COMMIT;
